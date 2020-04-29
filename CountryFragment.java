@@ -86,7 +86,7 @@ public class CountryFragment extends Fragment {
         startActivity(covidCountryDetail);
     }
     private void getDataFromServer() {
-        String url = "https://corona.lmao.ninja/countries";
+        String url = "https://corona.lmao.ninja/v2/all";
 
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
